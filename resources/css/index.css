@@ -62,21 +62,3 @@ text-align: center; /* Ensure text and children are centered */
 }
 
 
-
-.call-to-action {
-  position: relative;
-  background-color: #aae0ff;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-.call-to-action:before {
-  content: "";
-  position: absolute;
-  background-color: #aae0ff;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-}

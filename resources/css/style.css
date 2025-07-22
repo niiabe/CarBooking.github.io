@@ -27,6 +27,25 @@ header h1 {
     margin: 0;
 }
 
+/* nav */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;     /* Increase font size */
+  font-weight: 600;      /* Semi-bold */
+  letter-spacing: 0.5px; /* Optional: spacing between letters */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;      /* Bigger brand name */
+  font-weight: 700;
+}
+
+form .form-control,
+form .btn {
+  font-size: 1rem;
+}
+
+
+
 section {
     padding: 40px 20px;
 }
@@ -200,6 +219,7 @@ footer {
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+		box-sizing: border-box; /* Prevent padding from increasing width */		
     }
 
     .sidenav a {
@@ -230,6 +250,27 @@ footer {
     z-index: 1;
     transition:  all 0.3s;
 
+}
+
+
+/* call to action */
+
+.call-to-action {
+  position: relative;
+  background-color: #aae0ff;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.call-to-action:before {
+  content: "";
+  position: absolute;
+  background-color: #aae0ff;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
 }
 
 
