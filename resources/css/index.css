@@ -1,16 +1,15 @@
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background-color: #fefefe;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-color: #ffffff;
   height: 100%;
   width: 100%;
   top: 0;
@@ -19,6 +18,11 @@ header.masthead:before {
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
+}
+
+section.showcase {
+  padding: 0;
+  background-color: #ffffff;
 }
 
 
