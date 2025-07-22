@@ -16,8 +16,13 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="resources/css/style.css" rel="stylesheet" />
+
+        <!-- CSS just for Index.html -->
+         <link rel="stylesheet" href="resources/css/index.css" />
 
 
         <!-- slider -->
@@ -28,10 +33,23 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container" style="font-family: 'DM', sans-serif;">
-                <a class="navbar-brand font-bold" href="/" style="font-family: 'DM Serif Display', serif; font-style: italic; " >Car Booking</a>
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+            <div class="container" style="font-family: 'DM Serif Display', serif; font-style: italic;">
+                <a class="navbar-brand font-bold" href="/" style="font-family: 'DM Serif Display', serif; font-style: italic; " >Car Booking</a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item "><a class="nav-link active font-bold text-700"  href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                    
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search for cars..." aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>             
             </div>
         </nav>
         <!-- Masthead-->
@@ -120,28 +138,48 @@
             <div class="container">
                 <div class="row">
                     
-                    <div class="col-lg-4">
-                        
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                        </div>
+                    <div class="col-lg-4">  
+                        <div class="card">                              
+                            <a href="#"><img class="card-img-top" src="resources/media/detail/1C6RR7LT6GS6BB8UI/frontleft.jpg" width="640" height="300" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="detail.php?inventory=$inventoryID">2012 Hyundai Sonata</a>
+                                </h4>
+                                <h5 class="mb-0 font-bold">&cent; 100</h5>
+                            </div>                        
+                        </div>   
                     </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                            <h3>Bootstrap 5 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
-                        </div>
+
+                    <div class="col-lg-4">  
+                        <div class="card">                              
+                            <a href="#"><img class="card-img-top" src="resources/media/detail/1FA6P8AMXG5AVX60D/frontLeft.jpg" width="640" height="300" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="detail.php?inventory=$inventoryID">2012 Hyundai Sonata</a>
+                                </h4>
+                                <h5 class="mb-0 font-bold">&cent; 100</h5>
+                            </div>                        
+                        </div>   
                     </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                        </div>
+
+                    <div class="col-lg-4">  
+                        <div class="card">                              
+                            <a href="#"><img class="card-img-top" src="resources/media/detail/55SWF4JB0GU8GH0ZL/frontright.jpg" width="640" height="300" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="detail.php?inventory=$inventoryID">2012 Hyundai Sonata</a>
+                                </h4>
+                                <h5 class="mb-0 font-bold">&cent; 100</h5>
+                            </div>                        
+                        </div>   
                     </div>
+                    
+                                      
+                    
+                
+                    
+                    
+                    
                 </div>
             </div>
         </section>
@@ -149,25 +187,30 @@
         <section class="showcase">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('resources/media/misc/vehicle_inspection.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Fully Responsive Design</h2>
-                        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                        <h2>Safe & Secure Rides</h2>
+                        <p class="lead mb-0">
+                            Your safety is our top priority. All vehicles are regularly inspected, fully insured, and equipped with GPS tracking for peace of mind.
+                        </p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('resources/media/misc/happy.jpg')"></div>
                     <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Updated For Bootstrap 5</h2>
-                        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                        <h2>Flexible & Affordable Options</h2>
+                        <p class="lead mb-0">
+                            Whether you need a quick airport transfer or a long-term rental, we offer competitive rates and flexible plans to fit your needs.
+                        </p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('resources/media/misc/roadside.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Easy to Use & Customize</h2>
-                        <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-                    </div>
+                        <h2>Reliable Support, 24/7</h2>
+                        <p class="lead mb-0">
+                            Count on us any time — our dedicated support team and roadside assistance are available around the clock to ensure your journey is smooth and hassle-free.
+                        </p>
                 </div>
             </div>
         </section>
