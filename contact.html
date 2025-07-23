@@ -52,17 +52,16 @@
         </nav>
 
         <!-- Page content-->
-        <div class="container  mb-4 mt-10" style="background-color: #eff1f1;">
+        <div class="container  mb-4 mt-10" >
             <div class="row">
                 <!-- Portfolio Item Row -->
-                 <div class="row">
+                 <div class="row  shadow-sm p-3 mb-5 bg-light rounded">
                     <div class="col-md-8 mt-4 ">
                         <!-- iframe for location -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.4406985971768!2d-0.24138659206370916!3d5.584543818468149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f49433c6b6e27f9!2sThe+Church+of+Pentecost!5e0!3m2!1sen!2sgh!4v1505319438015" width="100%" height="95%" frameborder="0" style="border:double 2px ghostwhite; border-radius:3px" allowfullscreen class="shadow-sm p-3 mb-5 bg-body rounded"></iframe>                  
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.4406985971768!2d-0.24138659206370916!3d5.584543818468149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f49433c6b6e27f9!2sThe+Church+of+Pentecost!5e0!3m2!1sen!2sgh!4v1505319438015" width="100%" height="95%" frameborder="0" style="border:double 2px ghostwhite; border-radius:3px" allowfullscreen ></iframe>                  
                     </div>
-                    <div class="col-md-4 mt-4 px-2 shadow-sm p-3 mb-5 bg-body rounded">
-                        <h3 class="my-3">Contact Us</h3>
-                        <h3 class="my-3"><b>Tel: </b> 0242 480 480</h3>
+                    <div class="col-md-4 mt-4 px-2">
+                        <h3 class="my-3" style="font-family: 'DM Serif Display';">Contact Us</h3>
                         <form method="POST" class="form-horizontal px-2" role="form" action="">              
                             <div class="form-group">
                                 <div class="col-sm-12 ">
@@ -107,38 +106,27 @@
 
                      <!-- Contact Information -->
                     <div class="container mt-10 mb-12">
-                        <div class="row" style="background-color: #711010; border-radius: 5px; padding: 20px;">
-                            <div class="col-lg-12">
-                                <div id="form" class=" p-4 " >
-                                    <form method="post" class="form-horizontal" role="form" action="detail.php" >
-                                        <div class="form-group mb-3">
-                                            <div class="col-sm-10">
-                                                <input name="fullName" type="text" class="form-control" placeholder="Full Name" required maxlength="10">
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <div class="col-sm-10">
-                                                <input hidden name="chassisNumber" type="text" class="form-control" required maxlength="17" value="$chassisNumber">
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <div class="col-sm-10">
-                                                <input type="text" pattern="[0-9]{10}" maxlength="10" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <div class="col-sm-10">
-                                                <textarea maxlength="100" type="text" name="msg" class = "form-control" placeholder="Message" required></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <div class="col-sm-10 offset-sm-1 text-center">
-                                                <input class="btn btn-danger" type="submit" value="Submit" name="submitBooking" >
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-
+                        <div class="row  p-3  bg-light rounded" >
+                            <div class="col-4 text-center p-3 bg-light rounded">
+                                <h3 class="text-primary" style="font-family: 'DM Serif Display';">Contact Information</h3>
+                                <p class="text-muted">Feel free to reach out to us via the following channels:</p>
+                                <p class="text-muted">Email: <a href="mailto:examnple@exaple.com">example@example.com</a></p>
+                                <p class="text-muted">Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                                <p class="text-muted">Address: 1234 Street Name, City, State, Zip</p>                        
+                            </div>
+                            <div class="col-4 text-center p-3 bg-light rounded">
+                                <h3 class="text-primary" style="font-family: 'DM Serif Display';">Follow Us</h3>
+                                <p class="text-muted">Stay connected with us on social media:</p>
+                                <p class="text-muted">Facebook: <a href="https://www.facebook.com" target="_blank">facebook.com/example</a></p>
+                                <p class="text-muted">Twitter: <a href="https://www.twitter.com" target="_blank">twitter.com/example</a></p>
+                                <p class="text-muted">Instagram: <a href="https://www.instagram.com" target="_blank">instagram.com/example</a></p>
+                            </div>
+                            <div class="col-4 text-center p-3 bg-light rounded">
+                                <h3 class="text-primary" style="font-family: 'DM Serif Display';">Business Hours</h3>
+                                <p class="text-muted">We are available during the following hours:</p>
+                                <p class="text-muted">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                <p class="text-muted">Saturday: 10:00 AM - 4:00 PM</p>
+                                <p class="text-muted">Sunday: Closed</p>
                             </div>
                         </div>
                     </div>
