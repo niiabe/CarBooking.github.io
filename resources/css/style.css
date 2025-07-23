@@ -4,7 +4,7 @@ html, body {
             margin: 0;
             padding: 0;
             overflow: flow; 
-			overflow-x: hidden;
+			  overflow-x: hidden;
   			width: 100%;
         }
 
@@ -14,6 +14,65 @@ body {
      min-height: 100vh; /* Ensure body takes full height */
      min-width: 100vw;
 }
+
+
+
+/* preloader */
+
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-wrapper {
+  text-align: center;
+}
+
+.logo-text {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: #1a73e8;
+  margin-bottom: 1rem;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #1a73e8;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Pulse Animation for Logo */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+}
+
+
 
 
 /* header {

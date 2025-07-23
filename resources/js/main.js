@@ -1,3 +1,18 @@
+// preloader.js
+
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+      preloader.classList.add('fade-out');
+    }, 500); // wait half a second before fade out
+  });
+
+
+
+
+
+
+
 // This file contains JavaScript code for interactive features on the portfolio page.
 
 // Smooth scrolling for anchor links
